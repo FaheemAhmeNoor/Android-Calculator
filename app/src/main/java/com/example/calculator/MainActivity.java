@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int firstValue, secondValue, ans;
+                float firstValue, secondValue, ans;
                 firstValue = Integer.parseInt(editTxt01.getText().toString());
                 secondValue = Integer.parseInt(editTxt02.getText().toString());
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btnMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int firstValue, secondValue, ans;
+                float firstValue, secondValue, ans;
                 firstValue = Integer.parseInt(editTxt01.getText().toString());
                 secondValue = Integer.parseInt(editTxt02.getText().toString());
 
@@ -67,10 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Answer is " + ans);
             }
         });
+
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int firstValue, secondValue, ans;
+                float firstValue, secondValue, ans;
                 firstValue = Integer.parseInt(editTxt01.getText().toString());
                 secondValue = Integer.parseInt(editTxt02.getText().toString());
 
@@ -83,11 +84,10 @@ public class MainActivity extends AppCompatActivity {
         btnPercentage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int firstValue, secondValue, ans;
+                float firstValue, secondVal ,ans;
                 firstValue = Integer.parseInt(editTxt01.getText().toString());
-                secondValue = Integer.parseInt(editTxt02.getText().toString());
-
-                ans = firstValue % secondValue;
+                secondVal = 100;
+                ans = firstValue / secondVal;
 
                 textView.setText("Answer is " + ans);
             }
