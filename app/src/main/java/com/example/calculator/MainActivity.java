@@ -41,19 +41,56 @@ public class MainActivity extends AppCompatActivity {
 
                 textView.setText("Answer is " + ans);
             }
+        });
 
-       btnMinus.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int firstValue, secondValue, ans;
-                    firstValue = Integer.parseInt(editTxt01.getText().toString());
-                    secondValue = Integer.parseInt(editTxt02.getText().toString());
+        btnMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int firstValue, secondValue, ans;
+                firstValue = Integer.parseInt(editTxt01.getText().toString());
+                secondValue = Integer.parseInt(editTxt02.getText().toString());
 
-                    ans = firstValue + secondValue;
+                ans = firstValue - secondValue;
 
-                    textView.setText("Answer is " + ans);
-                }
+                textView.setText("Answer is " + ans);
+            }
+        });
+        btnMul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int firstValue, secondValue, ans;
+                firstValue = Integer.parseInt(editTxt01.getText().toString());
+                secondValue = Integer.parseInt(editTxt02.getText().toString());
 
+                ans = firstValue * secondValue;
+
+                textView.setText("Answer is " + ans);
+            }
+        });
+        btnDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int firstValue, secondValue, ans;
+                firstValue = Integer.parseInt(editTxt01.getText().toString());
+                secondValue = Integer.parseInt(editTxt02.getText().toString());
+
+                ans = firstValue / secondValue;
+
+                textView.setText("Answer is " + ans);
+            }
+        });
+
+        btnPercentage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int firstValue, secondValue, ans;
+                firstValue = Integer.parseInt(editTxt01.getText().toString());
+                secondValue = Integer.parseInt(editTxt02.getText().toString());
+
+                ans = firstValue % secondValue;
+
+                textView.setText("Answer is " + ans);
+            }
         });
 
 
