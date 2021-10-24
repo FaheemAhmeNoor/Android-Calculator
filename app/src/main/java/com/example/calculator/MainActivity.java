@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                 ans = firstValue - secondValue;
 
-                textView.setText("Answer is " + ans);
+                textView.setText("" + ans);
             }
         });
         btnMul.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
                 ans = firstValue * secondValue;
 
-                textView.setText("Answer is " + ans);
+                textView.setText("" + ans);
             }
         });
 
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
                 ans = firstValue / secondValue;
 
-                textView.setText("Answer is " + ans);
+                textView.setText("" + ans);
             }
         });
 
@@ -89,11 +90,17 @@ public class MainActivity extends AppCompatActivity {
                 secondVal = 100;
                 ans = firstValue / secondVal;
 
-                textView.setText("Answer is " + ans);
+                textView.setText("" + ans);
             }
         });
 
-
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editTxt01.setText("");
+                editTxt02.setText("");
+            }
+        });
 
 
     }

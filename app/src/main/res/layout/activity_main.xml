@@ -7,23 +7,13 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnMinus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:text="@string/Minus"
-        app:layout_constraintBottom_toBottomOf="@+id/btnMul"
-        app:layout_constraintEnd_toStartOf="@+id/btnMul"
-        app:layout_constraintTop_toTopOf="@+id/btnMul"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/btnMul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:text="@string/Multiply"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,9 +23,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/Plus"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnMinus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnMinus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="@string/Minus"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMul"
+        app:layout_constraintEnd_toStartOf="@+id/btnMul"
+        app:layout_constraintTop_toTopOf="@+id/btnMul"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -44,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/Division"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPercentage"
         app:layout_constraintHorizontal_bias="0.246"
@@ -57,8 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
         android:text="@string/Percentage"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnDiv"
         app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnMinus"
         app:layout_constraintTop_toTopOf="@+id/btnDiv"
         app:layout_constraintVertical_bias="0.0" />
@@ -68,8 +74,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/Clear"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMul" />
 
@@ -101,14 +108,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="172dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="4dp"
+        android:hint=" "
         android:text="@string/TextView"
+        android:textColorHighlight="#3E6F97"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTxt02"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintTop_toBottomOf="@+id/btnClear"
+        app:layout_constraintVertical_bias="0.302" />
 </androidx.constraintlayout.widget.ConstraintLayout>
