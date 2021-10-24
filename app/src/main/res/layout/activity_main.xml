@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
-        android:text="-"
+        android:text="@string/Minus"
         app:layout_constraintBottom_toBottomOf="@+id/btnMul"
         app:layout_constraintEnd_toStartOf="@+id/btnMul"
         app:layout_constraintTop_toTopOf="@+id/btnMul"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
-        android:text="*"
+        android:text="@string/Multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="+"
+        android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/btnMinus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnMinus"
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="÷"
+        android:text="@string/Division"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPercentage"
         app:layout_constraintHorizontal_bias="0.246"
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
-        android:text="%"
+        android:text="@string/Percentage"
         app:layout_constraintBottom_toBottomOf="@+id/btnDiv"
         app:layout_constraintEnd_toStartOf="@+id/btnClear"
         app:layout_constraintStart_toStartOf="@+id/btnMinus"
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:layout_marginEnd="4dp"
-        android:text="C"
+        android:text="@string/Clear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMul" />
 
@@ -78,22 +78,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter first operand"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editTxt02"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDiv"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.482"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTxt02"
+        android:id="@+id/editTextNumber4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="320dp"
         android:ems="10"
-        android:hint="Enter second operand"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTxt01"
@@ -101,16 +100,15 @@
         app:layout_constraintStart_toStartOf="@+id/editTxt01" />
 
     <TextView
-        android:id="@+id/answer"
+        android:id="@+id/textView2"
         android:layout_width="172dp"
         android:layout_height="81dp"
         android:layout_marginTop="84dp"
-        android:hint="Answer"
-        android:text="TextView"
+        android:text="@string/TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTxt02"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber4"
         app:layout_constraintVertical_bias="0.045" />
 </androidx.constraintlayout.widget.ConstraintLayout>

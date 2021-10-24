@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string name="Minus">-</string>
+    <string name="Multiply">*</string>
+    <string name="Plus">+</string>
+    <string name="Division">÷</string>
+    <string name="Percentage">%</string>
+    <string name="Clear">C</string>
+    <string name="TextView">TextView</string>
 </resources>
